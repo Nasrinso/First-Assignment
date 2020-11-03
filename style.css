@@ -26,16 +26,82 @@ h2 {
 	font-size: 1.5em;
 }
 
+#character {
+    margin:15px auto;
+    padding:0;
+    max-width:900px;
+  }
 
+  #character li {
+    float:left;
+    margin: 0 10px 10px 0;
+    list-style:none;
+    width:35px;
+    height:30px;
+    padding-top:10px;
+    background:#fff;
+    color:black;
+    border-radius: 5px;
+    border: solid 1px #fff;
+      
+    /* trying to create a hover
+     :hover{
+        background:$base-color;
+        border: solid 1px $white;
+        color:$white;
+      }*/
+  }
+
+  #words {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display:block;
+  }
+  
+  #words li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size:1.6em;
+  }
+
+  #leftlives{
+    font-size:1.6em;
+    text-align:center;
+    display:block;
+  }
+
+  button{
+    border-radius: 5px;
+    background:rgb(167, 167, 231);
+    color:black;
+    border: solid 1px rgb(167, 167, 231);
+    text-decoration:none;
+    font-size:1em;
+    padding:18px 10px;
+    width:180px;
+    margin: 10px;
+    outline: none;
+    
+       /* &:hover{
+        @include transition;
+        background: #ffffff;;
+        border: solid 1px #ffffff;
+        color:balck;
+      } */
+  }
 
 @media (max-width: 767px) {
-    #alphabet {
+    #character {
     padding:0 0 0 15px;
   }
     }
   
     @media (max-width: 480px) {
-    #alphabet {
+    #character {
     padding:0 0 0 25px;
   }
     }
