@@ -1,0 +1,42 @@
+
+body {
+    background:rgb(207, 202, 202);
+    font-family: 'Itim', cursive;
+    color: rgb(13, 13, 126);
+    height:100%;
+    text-align:center;
+    font-size:18px;
+  }
+  .wrappper{
+    width:100%;
+    margin:0 auto;
+  }
+
+  h1, h2 {
+	font-weight: 100;
+	text-transform: uppercase;
+   margin:5px 0;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+
+
+@media (max-width: 767px) {
+    #alphabet {
+    padding:0 0 0 15px;
+  }
+    }
+  
+    @media (max-width: 480px) {
+    #alphabet {
+    padding:0 0 0 25px;
+  }
+    }
+
