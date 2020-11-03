@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>HangMan</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <h1>Hangman Game</h1>
+         <h2>JavaScript Hangman Game created by <!-- forgot our team name :D --> </h2>
+         <p>Use any key on your keyboard, or click hint to get a clue. </p>
+     </div>
+     <div class="wrapper">
+         <div id="buttons">
+         </div>  
+         <p id="catagoryName"></p>
+         <div id="hold">
+         </div>
+         <p id="mylives"></p>
+         <p id="clue">Clue</p>  
+         <div class="container">
+            <p>Number of guesses remaining: <span id="guessesLeft">10</span></p>
+           <button id="hint">Hint</button>
+           <button id="reset">Play again</button>
+         </div>
+     </div>
+    <script src="./hangman.js"></script>
 </body>
 </html>
