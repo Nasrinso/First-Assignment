@@ -26,48 +26,6 @@ h2 {
 	font-size: 1.5em;
 }
 
-#character {
-    margin:15px auto;
-    padding:0;
-    max-width:900px;
-  }
-
-  #character li {
-    float:left;
-    margin: 0 10px 10px 0;
-    list-style:none;
-    width:35px;
-    height:30px;
-    padding-top:10px;
-    background:#fff;
-    color:black;
-    border-radius: 5px;
-    border: solid 1px #fff;
-      
-    /* trying to create a hover
-     :hover{
-        background:$base-color;
-        border: solid 1px $white;
-        color:$white;
-      }*/
-  }
-
-  #words {
-    margin: 0;
-    display: block;
-    padding: 0;
-    display:block;
-  }
-  
-  #words li {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    display: inline-block;
-    padding: 0 10px;
-    font-size:1.6em;
-  }
-
   #leftlives{
     font-size:1.6em;
     text-align:center;
@@ -80,9 +38,9 @@ h2 {
     color:black;
     border: solid 1px rgb(167, 167, 231);
     text-decoration:none;
-    font-size:1em;
-    padding:18px 10px;
-    width:180px;
+    font-size:0.8em;
+    padding:10px 8px;
+    width:100px;
     margin: 10px;
     outline: none;
     
