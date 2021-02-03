@@ -1,66 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-    background:rgb(207, 202, 202);
-    font-family: 'Itim', cursive;
-    color: rgb(13, 13, 126);
-    height:100%;
-    text-align:center;
-    font-size:18px;
-  }
-  .wrappper{
-    width:100%;
-    margin:0 auto;
-  }
+    margin: 0;
+    background-color: rgb(24, 39, 39);
+    color: white;
+    font-family: "Montserrat";
+    font-size: large;
+    text-align: center;
+}
 
-  h1, h2 {
-	font-weight: 100;
-	text-transform: uppercase;
-   margin:5px 0;
+.wrapper {
+    border: 5px solid rgb(24, 39, 39);
+    max-width: 850px;
+    margin: 1.5em auto;
+    background-color: rgb(24, 39, 39);
+    box-shadow: 5px 5px 5px rgb(10, 12, 11);
+    border-radius: .6em;
 }
 
 h1 {
-	font-size: 2em;
+    font-size: 3rem;
+    margin: .3em 0 0;
+    text-shadow: 3px 3px rgb(22, 22, 22);
 }
 
-h2 {
-	font-size: 1.5em;
+.guessed-word {  
+    font-size: 3rem;
+    margin-top: -.2em;
 }
 
-  #leftlives{
-    font-size:1.6em;
-    text-align:center;
-    display:block;
-  }
+.kung-fu-uni {
+    color: rgb(155, 179, 175);
+    font-size: 1.2rem;
+    text-shadow: none;
+    cursor: pointer;
+}
 
-  button{
-    border-radius: 5px;
-    background:rgb(167, 167, 231);
-    color:black;
-    border: solid 1px rgb(167, 167, 231);
-    text-decoration:none;
-    font-size:0.8em;
-    padding:10px 8px;
-    width:100px;
-    margin: 10px;
-    outline: none;
-    
-       /* &:hover{
-        @include transition;
-        background: #ffffff;;
-        border: solid 1px #ffffff;
-        color:balck;
-      } */
-  }
+.buttons-container {
+    margin-bottom: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: .6em;
+    font-size: 2rem;
+}
 
-@media (max-width: 767px) {
-    #character {
-    padding:0 0 0 15px;
-  }
-    }
-  
-    @media (max-width: 480px) {
-    #character {
-    padding:0 0 0 25px;
-  }
-    }
+button {
+    background-color: rgba(0, 0, 0, 0.287);
+    border: .1em solid rgb(155, 179, 175);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .5em .8em;
+    border-radius: .4em;
+    margin: .2em .2em;
+}
 
+.hangman-picture {
+    margin-top: .6em;
+}
+
+.wins {
+    background-color: rgba(0, 128, 0, 0.568);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 20%;
+    border-radius: .4em;
+}
+
+.defeats {
+    background-color: rgba(255, 0, 0, 0.568);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 20%;
+    border-radius: .4em;
+}
