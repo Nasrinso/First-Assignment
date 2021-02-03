@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>HangMan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Hangman</title>
 </head>
+
 <body>
-    <div class="wrapper">
-        <h1>Hangman Game</h1>
-         <h2>JavaScript Hangman Game created by <!-- forgot our team name :D --> </h2>
-         <p>Use any key on your keyboard, or click hint to get a clue. </p>
-     </div>
-     <div class="wrapper">
-         <div id="buttons">
-         </div>  
-         <p id="catagoryName"></p>
-         <div id="hold">
-         </div>
-         <p id="leftlives"></p>
-         <p id="clue">Clue</p>  
-         <div class="container">
-            <p>Number of guesses remaining: <span id="guessesLeft">10</span></p>
-           <button id="hint">Hint</button>
-           <button id="reset">Play again</button>
-         </div>
-     </div>
-    <script src="./hangman.js"></script>
+
+  <main class="wrapper">
+    <header class="game-header">
+      <h1>Hangman<span class="kung-fu-uni" id="kung-fu"> - created by the &#128073;</span></h1>
+    </header>
+
+    <section class="game-main">
+      <p>Guess the fruit:</p>
+      <p class="guessed-word" id="wordInput"></p>
+      <section class="buttons-container" id="message"></section>
+      <p>Incorrect guesses: <span id="errors">0</span> of <span id="maxWrong"></span></p>
+      <button onClick="reset()">Restart the game</button>
+    </section>
+
+    <p class="wins" id="wins"></p>
+    <p class="defeats" id="defeats"></p>
+    <img class="hangman-picture" id="hangmanPicture">
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
